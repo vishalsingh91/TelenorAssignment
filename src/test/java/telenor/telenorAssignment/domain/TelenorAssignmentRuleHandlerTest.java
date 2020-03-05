@@ -10,14 +10,14 @@ public class TelenorAssignmentRuleHandlerTest {
 
 
     @Test
-    public void shouldRetrunGreetMessageIfPersonalUser() throws Exception {
+    public void shouldReturnGreetMessageIfPersonalUser() {
         //given
         String account = "personal";
-        int id = 123;
+        String id = "123";
         String expectedMessage = "Hi, userId " + id;
 
         //when
-        String actualMessage = new TelenorAssignmentRuleHandler().validateAndGreet(account, id, null);
+        String actualMessage = new TelenorAssignmentRuleHandler().validateAndGreet(account, "", id);
 
         //then
         assertEquals(expectedMessage, actualMessage);
@@ -27,12 +27,11 @@ public class TelenorAssignmentRuleHandlerTest {
     public void shouldReturnWelcomeMessageIfBusinessUser() {
         //given
         String account = "business";
-        int id = 123;
         String type = "big";
         String expectedMessage = "Welcome, Business user!";
 
         //when
-        String actualMessage = new TelenorAssignmentRuleHandler().validateAndGreet(account, id, type);
+        String actualMessage = new TelenorAssignmentRuleHandler().validateAndGreet(account, type, null);
 
         //then
         assertEquals(expectedMessage, actualMessage);
@@ -42,10 +41,9 @@ public class TelenorAssignmentRuleHandlerTest {
     public void shouldThrowExceptionTypeIsSmall() {
         //given
         String account = "business";
-        int id = 123;
         String type = "small";
         //when
-        new TelenorAssignmentRuleHandler().validateAndGreet(account, id, type);
+        new TelenorAssignmentRuleHandler().validateAndGreet(account, type, null);
 
         //then
 

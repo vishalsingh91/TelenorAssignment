@@ -2,6 +2,9 @@ package telenor.telenorAssignment.application;
 
 import telenor.telenorAssignment.domain.TelenorAssignmentRuleHandler;
 
+import javax.validation.constraints.Positive;
+import java.util.Optional;
+
 public class TelenorGreetingService {
     private TelenorAssignmentRuleHandler telenorAssignmentRuleHandler;
 
@@ -9,7 +12,7 @@ public class TelenorGreetingService {
         this.telenorAssignmentRuleHandler = telenorAssignmentRuleHandler;
     }
 
-    public String greetUser(String account, int id, String type) {
-        return telenorAssignmentRuleHandler.validateAndGreet(account, id, type);
+    public String greetUser(String account, String type, String id) {
+        return telenorAssignmentRuleHandler.validateAndGreet(account, type, id);
     }
 }
