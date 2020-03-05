@@ -1,4 +1,4 @@
-package telenor.telenorAssignment.domain.exception;
+package telenor.assignment.domain.exception;
 
 
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package telenor.telenorAssignment.infrastructure.rest;
+package telenor.assignment.infrastructure.rest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,8 +7,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import telenor.telenorAssignment.application.TelenorGreetingService;
-import telenor.telenorAssignment.domain.exception.PathNotYetImplementedException;
+import telenor.assignment.application.TelenorGreetingService;
+import telenor.assignment.domain.exception.PathNotYetImplementedException;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

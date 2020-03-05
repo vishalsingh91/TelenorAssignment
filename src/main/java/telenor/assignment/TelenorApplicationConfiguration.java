@@ -1,9 +1,9 @@
-package telenor.telenorAssignment;
+package telenor.assignment;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import telenor.telenorAssignment.application.TelenorGreetingService;
-import telenor.telenorAssignment.domain.TelenorAssignmentRuleHandler;
+import telenor.assignment.application.TelenorGreetingService;
+import telenor.assignment.domain.TelenorAssignmentRuleHandler;
 
 @Configuration
 public class TelenorApplicationConfiguration {

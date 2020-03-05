@@ -1,4 +1,4 @@
-package telenor.telenorAssignment.infrastructure.rest;
+package telenor.assignment.infrastructure.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import telenor.telenorAssignment.application.TelenorGreetingService;
-import telenor.telenorAssignment.domain.ValuesAllowed;
+import telenor.assignment.application.TelenorGreetingService;
+import telenor.assignment.domain.ValuesAllowed;
 
 import javax.validation.constraints.Pattern;
 

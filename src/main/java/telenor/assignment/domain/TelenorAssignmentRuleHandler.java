@@ -1,6 +1,6 @@
-package telenor.telenorAssignment.domain;
+package telenor.assignment.domain;
 
-import telenor.telenorAssignment.domain.exception.PathNotYetImplementedException;
+import telenor.assignment.domain.exception.PathNotYetImplementedException;
 
 public class TelenorAssignmentRuleHandler {
     public String validateAndGreet(String account, String type, String id) {

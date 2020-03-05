@@ -1,6 +1,4 @@
-package telenor.telenorAssignment.domain;
-
-import org.apache.commons.lang3.StringUtils;
+package telenor.assignment.domain;
 
 import javax.validation.Constraint;
 import javax.validation.ConstraintValidator;

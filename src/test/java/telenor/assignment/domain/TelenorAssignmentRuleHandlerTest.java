@@ -1,7 +1,7 @@
-package telenor.telenorAssignment.domain;
+package telenor.assignment.domain;
 
 import org.junit.Test;
-import telenor.telenorAssignment.domain.exception.PathNotYetImplementedException;
+import telenor.assignment.domain.exception.PathNotYetImplementedException;
 
 import static org.junit.Assert.assertEquals;
 

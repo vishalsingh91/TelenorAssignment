@@ -1,9 +1,6 @@
-package telenor.telenorAssignment.application;
+package telenor.assignment.application;
 
-import telenor.telenorAssignment.domain.TelenorAssignmentRuleHandler;
-
-import javax.validation.constraints.Positive;
-import java.util.Optional;
+import telenor.assignment.domain.TelenorAssignmentRuleHandler;
 
 public class TelenorGreetingService {
     private TelenorAssignmentRuleHandler telenorAssignmentRuleHandler;

@@ -1,4 +1,4 @@
-package telenor.telenorAssignment.domain.exception;
+package telenor.assignment.domain.exception;
 
 public class PathNotYetImplementedException extends RuntimeException {
     public PathNotYetImplementedException(String message) {
